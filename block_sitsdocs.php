@@ -50,7 +50,7 @@ class block_sitsdocs extends block_base {
         $this->content->text .= '<ul>';
         foreach ($types as $type) {
             $doctype = $type->doctype;
-            $this->content->text .= '<li><h3>'.$doctype.'</h3>';  // Icons for doc types? - wouldn't matter too much if one was missing - make the type a class too so it can be targetted, would need doc type to be one word -> probably not as types will not be one word, so possibly no way to target?
+            $this->content->text .= '<li><h4>'.$doctype.'</h4>';  // Icons for doc types? - wouldn't matter too much if one was missing - make the type a class too so it can be targetted, would need doc type to be one word -> probably not as types will not be one word, so possibly no way to target?
             $this->content->text .= '<ul>';
             foreach ($docs as $doc) {
                 if ($doc->doctype == $doctype) {
